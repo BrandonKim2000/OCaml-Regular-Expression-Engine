@@ -1,0 +1,118 @@
+# dune utop src
+# OCAMLPARAM: unset
+# Workspace root: /Users/brandonkim/Desktop/Brandon/cmsc330spring20/project3
+$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/p2/136wsjs94m392bxv0szt272c0000gn/T/dunea728bf.output 2> /dev/null
+# Auto-detected concurrency: 4
+# disable binary cache
+$ /Users/brandonkim/.opam/4.07.0/bin/ocamlc.opt -config > /var/folders/p2/136wsjs94m392bxv0szt272c0000gn/T/dune472e36.output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Release
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = "default"
+#  ; toplevel_path =
+#      Some External "/Users/brandonkim/.opam/4.07.0/lib/toplevel"
+#  ; ocaml_bin = External "/Users/brandonkim/.opam/4.07.0/bin"
+#  ; ocaml = Ok External "/Users/brandonkim/.opam/4.07.0/bin/ocaml"
+#  ; ocamlc = External "/Users/brandonkim/.opam/4.07.0/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/Users/brandonkim/.opam/4.07.0/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/Users/brandonkim/.opam/4.07.0/bin/ocamldep.opt"
+#  ; ocamlmklib =
+#      Ok External "/Users/brandonkim/.opam/4.07.0/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "DUNE_OCAML_HARDCODED" : "/Users/brandonkim/.opam/4.07.0/lib"
+#        ; "DUNE_OCAML_STDLIB" : "/Users/brandonkim/.opam/4.07.0/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" :
+#            "/Users/brandonkim/Desktop/Brandon/cmsc330spring20/project3"
+#        ; "INSIDE_DUNE" :
+#            "/Users/brandonkim/Desktop/Brandon/cmsc330spring20/project3/_build/default"
+#        ; "MANPATH" :
+#            "/Users/brandonkim/Desktop/Brandon/cmsc330spring20/project3/_build/install/default/bin"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/Users/brandonkim/Desktop/Brandon/cmsc330spring20/project3/_build/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/Users/brandonkim/Desktop/Brandon/cmsc330spring20/project3/_build/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_path =
+#      [ External
+#          "/Users/brandonkim/Desktop/Brandon/cmsc330spring20/project3/dep"
+#      ; External "/Users/brandonkim/.opam/4.07.0/lib"
+#      ]
+#  ; arch_sixtyfour = true
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "4.07.0"
+#      ; standard_library_default = "/Users/brandonkim/.opam/4.07.0/lib/ocaml"
+#      ; standard_library = "/Users/brandonkim/.opam/4.07.0/lib/ocaml"
+#      ; standard_runtime = "/Users/brandonkim/.opam/4.07.0/bin/ocamlrun"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "cc"
+#      ; ocamlc_cflags = [ "-O2"; "-fno-strict-aliasing"; "-fwrapv" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64"; "-D_REENTRANT" ]
+#      ; ocamlopt_cflags = [ "-O2"; "-fno-strict-aliasing"; "-fwrapv" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64"; "-D_REENTRANT" ]
+#      ; bytecomp_c_compiler =
+#          [ "cc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "cc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ]
+#      ; native_c_libraries = []
+#      ; cc_profile = [ "-pg" ]
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "macosx"
+#      ; asm = [ "clang"; "-arch"; "x86_64"; "-Wno-trigraphs"; "-c" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-apple-darwin19.2.0"
+#      ; target = "x86_64-apple-darwin19.2.0"
+#      ; profiling = true
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = false
+#      ; exec_magic_number = "Caml1999X023"
+#      ; cmi_magic_number = "Caml1999I023"
+#      ; cmo_magic_number = "Caml1999O023"
+#      ; cma_magic_number = "Caml1999A023"
+#      ; cmx_magic_number = "Caml1999Y023"
+#      ; cmxa_magic_number = "Caml1999Z023"
+#      ; ast_impl_magic_number = "Caml1999M023"
+#      ; ast_intf_magic_number = "Caml1999N023"
+#      ; cmxs_magic_number = "Caml1999D023"
+#      ; cmt_magic_number = "Caml1999T023"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd _build/default && /Users/brandonkim/.opam/4.07.0/bin/ocamlc.opt -w -40 -w -24 -g -bin-annot -I src/.utop/.utop.eobjs/byte -I /Users/brandonkim/.opam/4.07.0/lib/bytes -I /Users/brandonkim/.opam/4.07.0/lib/camomile -I /Users/brandonkim/.opam/4.07.0/lib/camomile/default_config -I /Users/brandonkim/.opam/4.07.0/lib/camomile/dyn -I /Users/brandonkim/.opam/4.07.0/lib/camomile/lib_default -I /Users/brandonkim/.opam/4.07.0/lib/camomile/library -I /Users/brandonkim/.opam/4.07.0/lib/charInfo_width -I /Users/brandonkim/.opam/4.07.0/lib/findlib -I /Users/brandonkim/.opam/4.07.0/lib/lambda-term -I /Users/brandonkim/.opam/4.07.0/lib/lwt -I /Users/brandonkim/.opam/4.07.0/lib/lwt/unix -I /Users/brandonkim/.opam/4.07.0/lib/lwt_log -I /Users/brandonkim/.opam/4.07.0/lib/lwt_log/core -I /Users/brandonkim/.opam/4.07.0/lib/lwt_react -I /Users/brandonkim/.opam/4.07.0/lib/mew -I /Users/brandonkim/.opam/4.07.0/lib/mew_vi -I /Users/brandonkim/.opam/4.07.0/lib/mmap -I /Users/brandonkim/.opam/4.07.0/lib/ocaml/compiler-libs -I /Users/brandonkim/.opam/4.07.0/lib/ocaml/threads -I /Users/brandonkim/.opam/4.07.0/lib/ocplib-endian -I /Users/brandonkim/.opam/4.07.0/lib/ocplib-endian/bigstring -I /Users/brandonkim/.opam/4.07.0/lib/react -I /Users/brandonkim/.opam/4.07.0/lib/result -I /Users/brandonkim/.opam/4.07.0/lib/seq -I /Users/brandonkim/.opam/4.07.0/lib/trie -I /Users/brandonkim/.opam/4.07.0/lib/utop -I /Users/brandonkim/.opam/4.07.0/lib/zed -I /Users/brandonkim/Desktop/Brandon/cmsc330spring20/project3/dep/Sets -I src/.p3.objs/byte -no-alias-deps -o src/.utop/.utop.eobjs/byte/dune__exe__Utop.cmo -c -impl src/.utop/utop.ml-gen)
+$ (cd _build/default && /Users/brandonkim/.opam/4.07.0/bin/ocamlc.opt -w -40 -w -24 -g -o src/.utop/utop.exe -custom /Users/brandonkim/.opam/4.07.0/lib/ocaml/compiler-libs/ocamlcommon.cma /Users/brandonkim/.opam/4.07.0/lib/ocaml/compiler-libs/ocamlbytecomp.cma /Users/brandonkim/.opam/4.07.0/lib/ocaml/compiler-libs/ocamltoplevel.cma /Users/brandonkim/.opam/4.07.0/lib/findlib/findlib.cma /Users/brandonkim/.opam/4.07.0/lib/findlib/findlib_top.cma /Users/brandonkim/.opam/4.07.0/lib/result/result.cma /Users/brandonkim/.opam/4.07.0/lib/lwt/lwt.cma /Users/brandonkim/.opam/4.07.0/lib/ocaml/unix.cma -I /Users/brandonkim/.opam/4.07.0/lib/ocaml /Users/brandonkim/.opam/4.07.0/lib/ocaml/bigarray.cma -I /Users/brandonkim/.opam/4.07.0/lib/ocaml /Users/brandonkim/.opam/4.07.0/lib/mmap/mmap.cma /Users/brandonkim/.opam/4.07.0/lib/ocplib-endian/ocplib_endian.cma /Users/brandonkim/.opam/4.07.0/lib/ocplib-endian/bigstring/ocplib_endian_bigstring.cma /Users/brandonkim/.opam/4.07.0/lib/ocaml/threads/threads.cma -I /Users/brandonkim/.opam/4.07.0/lib/ocaml /Users/brandonkim/.opam/4.07.0/lib/lwt/unix/lwt_unix.cma -I /Users/brandonkim/.opam/4.07.0/lib/lwt/unix /Users/brandonkim/.opam/4.07.0/lib/react/react.cma /Users/brandonkim/.opam/4.07.0/lib/lwt_react/lwt_react.cma /Users/brandonkim/.opam/4.07.0/lib/camomile/default_config/camomileDefaultConfig.cma /Users/brandonkim/.opam/4.07.0/lib/camomile/library/camomileLibrary.cma /Users/brandonkim/.opam/4.07.0/lib/camomile/lib_default/camomileLibraryDefault.cma /Users/brandonkim/.opam/4.07.0/lib/camomile/dyn/camomileLibraryDyn.cma /Users/brandonkim/.opam/4.07.0/lib/camomile/camomile_yuge.cma /Users/brandonkim/.opam/4.07.0/lib/charInfo_width/charInfo_width.cma /Users/brandonkim/.opam/4.07.0/lib/zed/zed.cma /Users/brandonkim/.opam/4.07.0/lib/lwt_log/core/lwt_log_core.cma /Users/brandonkim/.opam/4.07.0/lib/lwt_log/lwt_log.cma /Users/brandonkim/.opam/4.07.0/lib/trie/trie.cma /Users/brandonkim/.opam/4.07.0/lib/mew/mew.cma /Users/brandonkim/.opam/4.07.0/lib/mew_vi/mew_vi.cma /Users/brandonkim/.opam/4.07.0/lib/lambda-term/lambda_term.cma -I /Users/brandonkim/.opam/4.07.0/lib/lambda-term /Users/brandonkim/.opam/4.07.0/lib/utop/uTop.cma /Users/brandonkim/.opam/4.07.0/lib/ocaml/str.cma -I /Users/brandonkim/.opam/4.07.0/lib/ocaml /Users/brandonkim/Desktop/Brandon/cmsc330spring20/project3/dep/Sets/sets.cma src/p3.cma src/.utop/.utop.eobjs/byte/dune__exe__Utop.cmo -linkall -warn-error -31)
